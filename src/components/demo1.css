@@ -1,0 +1,89 @@
+/* demo1.css */
+.demo1-svg {
+    width: 300px; 
+    height: 340px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+:root {
+    --top-color: #F26522;
+    --left-color: #5B57A6;
+    --right-color: #009384;
+    --bottom-color: #EEA616;
+}
+
+.demo1-top {
+    fill: var(--top-color);
+}
+
+.demo1-left {
+    fill: var(--left-color);
+}
+
+.demo1-right {
+    fill: var(--right-color);
+}
+
+.demo1-bottom {
+    fill: var(--bottom-color);
+}
+
+.demo1-top,
+.demo1-left,
+.demo1-right,
+.demo1-bottom {
+    fill-opacity: 0.5;
+}
+
+.demo1-top {
+    animation: popInOutTop 4s infinite;
+}
+
+.demo1-right {
+    animation: popInOutRight 4s infinite;
+}
+
+.demo1-bottom {
+    animation: popInOutBottom 4s infinite;
+}
+
+.demo1-left {
+    animation: popInOutLeft 4s infinite;
+}
+
+@keyframes popInOutTop {
+    0%, 20%, 100% {
+        fill-opacity: 0.5;
+    }
+    25% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes popInOutRight {
+    0%, 25%, 40%, 100% {
+        fill-opacity: 0.5;
+    }
+    45% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes popInOutBottom {
+    0%, 45%, 60%, 100% {
+        fill-opacity: 0.5;
+    }
+    65% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes popInOutLeft {
+    0%, 65%, 80%, 100% {
+        fill-opacity: 0.5;
+    }
+    85% {
+        fill-opacity: 1;
+    }
+}
